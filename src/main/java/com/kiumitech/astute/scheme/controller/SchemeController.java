@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 @Slf4j
 public class SchemeController {
-    private SchemeApplicationService schemeApplicationService;
+    private final SchemeApplicationService schemeApplicationService;
 
     public SingleResponse<SchemeCO> addScheme(@NonNull @RequestBody SchemeAddCmd cmd) {
         return schemeApplicationService.addScheme(cmd);
