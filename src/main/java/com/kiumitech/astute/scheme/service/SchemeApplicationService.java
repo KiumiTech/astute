@@ -2,6 +2,7 @@ package com.kiumitech.astute.scheme.service;
 
 import com.kiumitech.astute.basis.SingleResponse;
 import com.kiumitech.astute.scheme.dto.SchemeAddCmd;
+import com.kiumitech.astute.scheme.dto.SchemeUpdateCmd;
 import com.kiumitech.astute.scheme.dto.data.SchemeCO;
 import com.kiumitech.astute.scheme.executor.SchemeAddCmdExe;
 import lombok.NonNull;
@@ -16,5 +17,9 @@ public class SchemeApplicationService {
 
     public SingleResponse<SchemeCO> addScheme(@NonNull SchemeAddCmd cmd) {
         return schemeAddCmdExe.execute(cmd);
+    }
+
+    public SingleResponse<SchemeCO> updateScheme(@NonNull SchemeUpdateCmd cmd) {
+        return null;
     }
 }

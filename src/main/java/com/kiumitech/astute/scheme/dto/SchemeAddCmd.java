@@ -9,6 +9,10 @@ public class SchemeAddCmd {
 
     private String name;
 
+    private String notes;
+
+    private String property;
+
     private List<Field> fields;
 
     @Data
