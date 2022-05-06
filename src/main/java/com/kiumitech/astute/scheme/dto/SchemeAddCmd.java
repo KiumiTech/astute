@@ -20,6 +20,7 @@ public class SchemeAddCmd {
         private String name;
         private String type;
         private String format;
+        private String notes;
     }
 
 }
