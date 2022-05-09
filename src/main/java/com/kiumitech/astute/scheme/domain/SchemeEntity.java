@@ -32,6 +32,7 @@ public class SchemeEntity extends BusinessObject<Long> {
         private FieldType type;
         private String format;
         private String notes;
+        private String property;
     }
 
     public enum FieldType {

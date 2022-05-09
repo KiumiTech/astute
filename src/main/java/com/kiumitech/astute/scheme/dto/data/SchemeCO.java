@@ -18,5 +18,9 @@ public class SchemeCO extends DTO {
     @ApiModelProperty(example = "name")
     private String name;
     @ApiModelProperty
+    private String property;
+    @ApiModelProperty
+    private String notes;
+    @ApiModelProperty
     private List<SchemeFieldCO> fields;
 }

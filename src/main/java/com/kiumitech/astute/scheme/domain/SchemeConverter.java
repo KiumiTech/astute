@@ -28,6 +28,8 @@ public class SchemeConverter {
                 SchemeEntity.Field field = new Field();
                 field.setName(p.getName());
                 field.setType(FieldType.valueOf(p.getType()));
+                field.setProperty(p.getProperty());
+                field.setNotes(p.getNotes());
                 field.setFormat(p.getFormat());
                 return field;
             }).collect(Collectors.toList()));

@@ -13,11 +13,14 @@ public class SchemeAssembler {
         SchemeCO ret = new SchemeCO();
         ret.setId(entity.getId());
         ret.setName(entity.getName());
+        ret.setProperty(entity.getProperty());
+        ret.setNotes(entity.getNotes());
         ret.setFields(entity.getFields().stream()
                 .map(p -> {
                     SchemeFieldCO item = new SchemeFieldCO();
                     item.setFormat(p.getFormat());
-                    item.setProperty("");
+                    item.setProperty(p.getProperty());
+                    item.setNotes(p.getNotes());
                     item.setName(p.getName());
                     item.setType(p.getType().name());
                     return item;
