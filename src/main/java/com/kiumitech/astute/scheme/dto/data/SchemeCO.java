@@ -13,7 +13,7 @@ import java.util.List;
 @EqualsAndHashCode(callSuper = true)
 public class SchemeCO extends DTO {
 
-    @ApiModelProperty(example = "1")
+    @ApiModelProperty(name = "id",example = "1")
     private Long id;
     @ApiModelProperty(example = "name")
     private String name;

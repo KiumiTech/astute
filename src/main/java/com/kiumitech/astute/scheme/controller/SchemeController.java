@@ -36,7 +36,7 @@ public class SchemeController {
 
     @ApiOperation("Find One")
     @GetMapping("/{id}")
-    public SingleResponse<SchemeCO> getScheme(@ApiParam(name = "id", value = "Scheme Id", required = true, defaultValue = "0") @PathVariable Long id) {
+    public SingleResponse<SchemeCO> getScheme(@ApiParam(required = true, example = "1")  @PathVariable Long id) {
         SchemeFindOneQry qry = new SchemeFindOneQry();
         qry.setId(id);
         return schemeApplicationService.findOne(qry);
