@@ -5,6 +5,7 @@ import com.kiumitech.astute.scheme.dto.SchemeAddCmd;
 import com.kiumitech.astute.scheme.dto.SchemeUpdateCmd;
 import com.kiumitech.astute.scheme.dto.data.SchemeCO;
 import com.kiumitech.astute.scheme.service.SchemeApplicationService;
+import io.swagger.annotations.Api;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 @Slf4j
 @RequestMapping("/scheme")
+@Api(value = "Scheme endpoint", tags = {"Scheme"})
 public class SchemeController {
     private final SchemeApplicationService schemeApplicationService;
 
