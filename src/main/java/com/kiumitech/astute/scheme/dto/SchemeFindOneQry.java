@@ -9,7 +9,7 @@ import lombok.Data;
 @ApiModel
 public class SchemeFindOneQry extends DTO {
 
-    @ApiModelProperty(name = "id", example = "2L")
+    @ApiModelProperty(name = "id", example = "1")
     private Long id;
 
 }

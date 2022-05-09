@@ -9,6 +9,6 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
 @ApiModel
 public class SchemeUpdateCmd extends SchemeAddCmd {
-    @ApiModelProperty(name = "id", example = "3L")
+    @ApiModelProperty(name = "id", example = "1")
     private Long id;
 }
